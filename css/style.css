@@ -1,0 +1,57 @@
+:root {
+    --system-ui: system-ui, Ubuntu, Oxygen-sans, Cantarell, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* , * ::before, * ::after{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--system-ui);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+
+    background: rgb(255,233,238); /*CHANGE ON DARK MODE*/
+    background: radial-gradient(circle, rgba(255,233,238,1) 0%, rgba(255,246,246,1) 22%, rgba(255,255,255,1) 100%); /*CHANGE ON DARK MODE*/
+}
+
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.7); /*CHANGE ON DARK MODE*/
+    border-right: 1px solid black; /*CHANGE ON DARK MODE*/
+}
+
+/*ALL THIS BELOW HAS TO BE CHANGED ON DARK MODE*/
+
+.nav-link, .nav-link:visited{
+    color: white;
+}
+
+
+.nav-link{
+    padding: 10px 0px 10px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    transform: rotate(-90deg);
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+main{
+    flex-grow: 1;
+}
